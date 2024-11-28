@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Loja Virtual</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-blue-200"><!--Site-->
+    
+    <header>
+        <dyiv class="bg-slate-900 p-4 flex items-center h-16"><!--Header-->
+            <button onclick="toggleForm()" class="flex"> 
+                <i class="fa-solid fa-bars text-white fa-2x "></i>
+                <h1 class="text-white mt-1">Menu</h1>
+            </button>
+            <img src="../images/Logo.png" alt="LOGO" class="w-12 h-12 ml-auto">
+        </dyiv>
+    </header>
+
+    <div id="newSubjectForm" class="bg-slate-800 w-1/4 min-h-screen gap-3 text-center hidden"><!--Menu-->
+        
+        <div class="p-2 text-white border-blue-600 h-max  border-2 ml-2 mr-2 rounded-md mb-4 "><!--Categorias-->
+            <h1>CATEGORIAS </h1>
+        </div>
+
+        <div class="p-2 text-white border-blue-600 h-max border-2 ml-2 mr-2 rounded-md mb-4"><!--Ranking-->
+            <h1>RANKING</h1>
+        </div>
+
+        <div class="p-2 text-white border-blue-600 h-max border-2 ml-2 mr-2 rounded-md mb-4"><!--Novidades-->
+            <h1>NOVIDADES</h1>
+        </div>
+
+        <div class="p-2 text-white border-blue-600 h-max border-2 ml-2 mr-2 rounded-md mt-auto"><!--Sair/Entrar-->
+            <button onclick="working()">SAIR/ENTRAR</button>
+        </div>
+
+    </div>
+
+
+    <div id="conteudo" class="bg-blue-600 min-h-96 absolute"><!--Conteudo-->
+        OLÁ MUNDO Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a mollitia nostrum in quisquam non officia harum reprehenderit illo aperiam corrupti obcaecati ducimus nihil nobis eos dolore, odio repellendus iusto.
+        Corrupti, ad sed? Officiis optio illo quis asperiores architecto quibusdam! Inventore ullam voluptatibus culpa similique ipsa commodi sed voluptas, fugiat tempore? Maiores tenetur distinctio voluptatum aliquid delectus impedit, nam velit.
+        Facere dolorum, provident impedit, inventore non reiciendis, quod alias ratione ipsum officiis perspiciatis adipisci. Ducimus dicta asperiores, porro nam optio deleniti doloribus eos dolore fuga corrupti nisi quas magni minima.
+        Exercitationem dolorem veniam cupiditate quam error possimus, expedita rem velit sapiente pariatur architecto non mollitia tempora eos id quidem sunt suscipit assumenda ipsa enim. Architecto illo quis cumque quos repudiandae?
+        Incidunt, neque sint ea earum adipisci quidem ipsam labore laboriosam perferendis tempora minus quas, ipsum mollitia repellat quaerat, sapiente natus minima. Labore ex reprehenderit in veniam quia commodi consectetur neque.
+    </div>
+
+<script>
+    function working(){
+        alert("Ainda não implementado")
+    }
+    function toggleForm() {
+        const form = document.getElementById('newSubjectForm');
+        const conteudo = document.getElementById('conteudo');
+        form.style.display = (form.style.display === 'block') ? 'none' : 'block'}
+</script>
+</body>
+</html>
